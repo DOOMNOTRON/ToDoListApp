@@ -10,6 +10,8 @@ body{
     padding: .25em;
     border-radius: .5em;
     margin: 1em;
+    cursor: pointer;
+
 }
 
 .todo h3{
@@ -23,6 +25,15 @@ body{
 .completed{
     opacity: 50%;
     background-color:chartreuse;
-    
+    text-decoration: line-through;
 
+}
+
+#complete-items{
+    border: .2em solid blue;
+}
+
+#incomplete-items{
+    border: .2em solid black;
+    margin-bottom: 1em;
 }

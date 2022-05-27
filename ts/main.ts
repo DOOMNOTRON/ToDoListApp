@@ -76,6 +76,10 @@ function displayToDoItem(item: ToDoItem): void{
 
     // creates <div> class "completed" or <div> class "todo"
     let itemDiv = document.createElement("div");
+
+    //create on click for div
+    itemDiv.onclick = markAsComplete;
+
     itemDiv.classList.add("todo");
     if(item.isCompleted){
         itemDiv.classList.add("completed");
@@ -95,5 +99,13 @@ function displayToDoItem(item: ToDoItem): void{
         incompleteToDos.appendChild(itemDiv);
     }
 
+}
+
+function markAsComplete(){
+    let itemDiv = <HTMLElement>this;
+    itemDiv.classList.add("completed");
+
+    let completedItems = document.getElementById("complete-items");
+    completedItems.appendChild(itemDiv);
 }
 
