@@ -74,10 +74,11 @@ function displayToDoItem(item: ToDoItem): void{
     let itemDate = document. createElement("p");
     itemDate.innerText = item.dueDate.toDateString();// makes it shorter or you get timezone
 
-    // creates <div>
+    // creates <div> class "completed" or <div> class "todo"
     let itemDiv = document.createElement("div");
+    itemDiv.classList.add("todo");
     if(item.isCompleted){
-        itemDiv.classList.add("complete");
+        itemDiv.classList.add("completed");
     }
 
     // puts them in the div because they are children of the div
