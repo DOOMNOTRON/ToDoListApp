@@ -2,3 +2,27 @@ body{
 
     font-family: 'Allerta Stencil', sans-serif;
 }
+
+.todo{
+    width: 20%;
+    box-sizing: border-box;
+    background-color:crimson;
+    padding: .25em;
+    border-radius: .5em;
+    margin: 1em;
+}
+
+.todo h3{
+    margin: 0px;
+}
+
+.todo p{
+    margin: 0px;
+}
+
+.completed{
+    opacity: 50%;
+    background-color:chartreuse;
+    
+
+}
